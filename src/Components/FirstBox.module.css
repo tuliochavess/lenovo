@@ -1,0 +1,46 @@
+.firstBox {
+  width: 407px;
+  margin-top: 197px;
+  margin-left: 349px;
+}
+
+.firstBox .lancamento,
+.firstBox .arquivos,
+.firstBox .olenovo,
+.firstBox .cotacao {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100;
+}
+
+.firstBox h1 {
+  margin-top: 41px;
+  font-size: 46px;
+  font-weight: bold;
+  letter-spacing: -2.3px;
+  line-height: 40px;
+  color: #3e8ddd;
+}
+
+.firstBox .experiencia {
+  margin-top: 40px;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: -1.5;
+  font-weight: 700;
+}
+
+.firstBox .arquivos {
+  margin-top: 40px;
+}
+
+.firstBox .olenovo {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  width: 390px;
+}
+
+.firstBox .cotacao {
+  color: #fff;
+  font-weight: 700;
+}

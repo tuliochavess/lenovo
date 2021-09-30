@@ -1,0 +1,88 @@
+.BoxForm {
+  width: 599px;
+  height: 535;
+  background-color: #ffffff;
+  color: #2a3c46;
+  margin-top: 184px;
+  margin-left: 232px;
+  display: grid;
+  grid-template-columns: 240px 240px;
+  column-gap: 24px;
+  justify-content: center;
+}
+
+.BoxForm h2,
+.BoxForm .ligue,
+.BoxForm button,
+.BoxForm .dados {
+  grid-column: 1 / 3;
+}
+
+.BoxForm .nome,
+.BoxForm .email,
+.BoxForm .funcionarios {
+  grid-column: 1;
+}
+
+.BoxForm .cnpj,
+.BoxForm .telefone,
+.BoxForm .cargo {
+  grid-column: 2;
+}
+
+.BoxForm h2 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 28px 70px 0px 70px;
+}
+
+.BoxForm .ligue {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.BoxForm input {
+  border: 1px solid #c7c7c7;
+  margin-bottom: 24px;
+}
+
+.BoxForm input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #5f5f5f;
+}
+
+.BoxForm input:focus {
+  outline: none;
+}
+
+.BoxForm input[type="text"],
+.BoxForm input[type="list"] {
+  padding-left: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+.BoxForm button {
+  width: 503px;
+  height: 64px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.BoxForm .dados {
+  font-size: 10px;
+  line-height: 15px;
+  counter-reset: #000;
+  font-weight: 300;
+  padding: 12px 0px 12px 0px;
+}

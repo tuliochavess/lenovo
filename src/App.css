@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
+
+body {
+  background: #000;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.App {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media (max-width: 40rem) {
+  .App {
+    margin: 0 16px;
+  }
+}
