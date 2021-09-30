@@ -14,19 +14,23 @@
 .BoxForm h2,
 .BoxForm .ligue,
 .BoxForm button,
-.BoxForm .dados {
+.BoxForm .dados,
+.BoxForm .check {
   grid-column: 1 / 3;
 }
 
 .BoxForm .nome,
 .BoxForm .email,
-.BoxForm .funcionarios {
+.BoxForm .funcionarios,
+.BoxForm .categoria,
+.BoxForm .motivo {
   grid-column: 1;
 }
 
 .BoxForm .cnpj,
 .BoxForm .telefone,
-.BoxForm .cargo {
+.BoxForm .cargo,
+.BoxForm .empresa {
   grid-column: 2;
 }
 
@@ -71,6 +75,11 @@
   color: #000;
 }
 
+.BoxForm .check label {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
 .BoxForm button {
   width: 503px;
   height: 64px;
@@ -89,4 +98,8 @@
   counter-reset: #000;
   font-weight: 300;
   padding: 12px 0px 12px 0px;
+}
+
+.BoxForm .dontShow {
+  display: none;
 }
