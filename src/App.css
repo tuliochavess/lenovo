@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
 
 body {
-  background: #000;
   margin: 0px;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
@@ -10,6 +9,10 @@ body {
 
 .App {
   display: flex;
+  background-color: #000 !important;
+  background: url("../src/Assets/backImage.svg") no-repeat fixed center;
+  width: 1920px;
+  height: 969px;
 }
 
 h1,
