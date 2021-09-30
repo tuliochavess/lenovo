@@ -170,7 +170,7 @@ const BoxForm = () => {
       <input
         type="list"
         list="categoria"
-        placeholder="Categoria de produto"
+        placeholder="Categoria de produto *"
         className={box === true ? styles.categoria : styles.dontShow}
       />
       <datalist id="categoria">
@@ -194,7 +194,7 @@ const BoxForm = () => {
       <input
         type="list"
         list="motivo"
-        placeholder="Motivo de contato"
+        placeholder="Motivo de contato *"
         className={box === true ? styles.motivo : styles.dontShow}
       />
       <datalist id="motivo">
@@ -205,7 +205,7 @@ const BoxForm = () => {
       <input
         type="list"
         list="estado"
-        placeholder="Estado"
+        placeholder="Estado *"
         className={box === true ? styles.estado : styles.dontShow}
       />
       <datalist id="estado">
