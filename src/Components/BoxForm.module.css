@@ -51,6 +51,10 @@
   margin-bottom: 24px;
 }
 
+.BoxForm input.erro {
+  border: 1px solid red;
+}
+
 .BoxForm input::placeholder {
   font-family: "Montserrat", sans-serif;
   color: #5f5f5f;
