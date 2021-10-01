@@ -44,3 +44,9 @@
   color: #fff;
   font-weight: 700;
 }
+
+@media (max-width: 1600px) {
+  .firstBox {
+    margin-left: 180px;
+  }
+}

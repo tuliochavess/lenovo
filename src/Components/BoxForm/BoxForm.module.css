@@ -92,6 +92,14 @@
   cursor: pointer;
 }
 
+.BoxForm button.done {
+  background-color: green;
+  cursor:initial
+}
+.BoxForm button.done::after {
+  content: url('../../Assets/check-solid.svg');
+}
+
 .BoxForm .dados {
   font-size: 10px;
   line-height: 15px;
@@ -102,4 +110,10 @@
 
 .BoxForm .dontShow {
   display: none;
+}
+
+@media (max-width: 1600px) {
+  .BoxForm {
+    margin-left: 100px;
+  }
 }

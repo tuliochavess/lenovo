@@ -4,13 +4,14 @@ import styles from "./BoxForm.module.css";
 const BoxForm = () => {
   const [nome, setNome] = React.useState("");
   const [errorNome, setErrorNome] = React.useState(null);
-  const [cnpj, setCnpj] = React.useState("");
   const [errorCnpj, setErrorCnpj] = React.useState(null);
-  const [email, setEmail] = React.useState("");
   const [errorEmail, setErrorEmail] = React.useState(null);
-  const [telefone, setTelefone] = React.useState("");
   const [errorTelefone, setErrorTelefone] = React.useState(null);
+  const [cnpj, setCnpj] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [telefone, setTelefone] = React.useState("");
   const [box, setBox] = React.useState(false);
+  const [done, setDone] = React.useState(false);
 
   function validateNome(value) {
     if (value.length === 0) {
@@ -84,15 +85,18 @@ const BoxForm = () => {
   }
 
   function handleClick() {
-    if (
-      errorNome === null &&
-      errorCnpj === null &&
-      errorEmail === null &&
-      errorTelefone === null
-    ) {
-      setBox(true);
+    if (box === false) {
+      if (
+        errorNome === null &&
+        errorCnpj === null &&
+        errorEmail === null &&
+        errorTelefone === null
+      ) {
+        setBox(true);
+      }
+    } else {
+      setDone(true);
     }
-    console.log();
   }
 
   return (
@@ -166,7 +170,9 @@ const BoxForm = () => {
         <option value="Desenvolvedor" />
         <option value="Líder" />
       </datalist>
+
       {/* ------------------------------------------- Segundo box início ------------------------------------------- */}
+
       <input
         type="list"
         list="categoria"
@@ -243,13 +249,19 @@ const BoxForm = () => {
           Confirmo ter aceitado receber comunicações da Lenovo.*
         </label>
       </div>
+
       {/* ------------------------------------------- Segundo box final ------------------------------------------- */}
 
-      <button onClick={handleClick}>
-        {box === false ? "ENVIAR" : "QUERO COTAR"}
+      <button
+        onClick={handleClick}
+        className={done === false ? "" : styles.done}
+      >
+        {done === false
+          ? `${box === false ? "PRÓXIMO ➜" : "QUERO COTAR"}`
+          : `${box === false ? "" : "FORMULÁRIO ENVIADO "}`}
       </button>
       <p className={styles.dados}>
-        *Estes dados podem ser armazenados em um servidor internacional pela
+        * Estes dados podem ser armazenados em um servidor internacional pela
         Lenovo ou em nome da Lenovo, permitindo ser revogada a permissão a
         qualquer momento. Lenovo pode processar os dados, conforme descrito na
         Política de Privacidade.
