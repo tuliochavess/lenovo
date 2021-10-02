@@ -63,7 +63,7 @@ const BoxForm = () => {
     } else if (
       !/^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}-?[0-9]{4}$/.test(value)
     ) {
-      setErrorTelefone("Preencha um E-mail válido");
+      setErrorTelefone("Preencha um telefone válido");
       return false;
     } else {
       setErrorTelefone(null);
